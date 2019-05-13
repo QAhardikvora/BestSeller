@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="none">
+
+	<test name="Only-Chrome">
+		<parameter name="browser1" value="Chrome" />
+		<parameter name="URL" value="https://www.veromoda.in/" />
+		<classes>
+			<class name="logic.Register" />
+			<class name="logic.Login" />
+			<class name="logic.MyAccount" />
+			<class name="logic.Filter" />
+			<class name="logic.Checkout" />
+			<class name="logic.CheckoutGuest" />
+			<class name="logic.Search" />
+			<class name="logic.Footers" />
+		</classes>
+	</test>
+
+</suite>
